@@ -17,8 +17,8 @@ class CreateUserDomiciolioTable extends Migration
             $table->increments('user_id');
             $table->string('domicilio');
             $table->string('numero_exterior');
-            $table->integer('colonia');
-            $table->integer('cp');
+            $table->string('colonia');
+            $table->string('cp');
             $table->string('cuidad');
             $table->timestamps();
         });
